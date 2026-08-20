@@ -219,3 +219,6 @@ print(len(unexplained))
 print(unexplained[["timestamp","motor_current_A","motor_current_A_clean","motor_current_is_spike"]])
 
 
+clean_path = r"D:\10-Day-Data-Refresher\Data\Dryer_plant_data_clean.csv"
+df.to_csv(clean_path, index=False)
+print("Cleaned data successfully saved to CSV!")
